@@ -1,0 +1,8 @@
+<!-- This is the index view for all the skis -->
+
+<% @skis.each do |ski| %>
+	<p>
+		<strong>Name:</strong> <%= ski.name %><br>
+		<strong>Description:</strong> <%= ski.description %>
+	</p>
+<% end %>
