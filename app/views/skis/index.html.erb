@@ -2,6 +2,7 @@
 
 <% @skis.each do |ski| %>
 	<p>
+		<h4><%= link_to ski.name, ski_path(ski) %></a></h4>
 		<strong>Name:</strong> <%= ski.name %><br>
 		<strong>Description:</strong> <%= ski.description %>
 	</p>

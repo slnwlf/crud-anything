@@ -1,0 +1,12 @@
+<h1 class="text-center">Edit a type of ski here</h1>
+
+<%= form_for @ski do |f| %>
+
+<div class="form-group">
+	<%= f.text_field :name, autofocus: true, class: "form-control" %>
+</div>
+<div class="form-group">
+	<%= f.text_field :description, class: "form-control" %>
+</div>
+	<%= f.submit "Save Ski", class: "btn btn-block btn-primary" %>
+<% end %>

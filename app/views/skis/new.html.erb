@@ -1,0 +1,12 @@
+<h1 class="text-center">Add a new ski here</h1>
+
+<%= form_for @ski, url: "/skis", method: "post" do |f| %>
+
+<div class="form-group">
+	<%= f.text_field :name, placeholder: "Name", autofocus: true, class: "form-control" %>
+</div>
+<div class="form-group">
+	<%= f.text_field :description, placeholder: "Description", class: "form-control" %>
+</div>
+	<%= f.submit "Save Ski", class: "btn btn-block btn-primary" %>
+<% end %>

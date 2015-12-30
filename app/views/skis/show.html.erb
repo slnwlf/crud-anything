@@ -1,0 +1,6 @@
+<h2><%= @ski.name %></h2>
+<p><%= @ski.description %></p>
+<div>
+<%= link_to "Edit", edit_ski_path(@ski), class: "btn btn-primary" %>
+<%= button_to "Delete", @ski, method: :delete, class: "btn btn-primary" %>
+</div>
