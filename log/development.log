@@ -8674,3 +8674,75 @@ Started GET "/skis/new" for ::1 at 2015-12-30 17:22:03 -0800
 Processing by SkisController#new as HTML
   Rendered skis/new.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-30 17:28:41 -0800
+Processing by SkisController#index as HTML
+  [1m[36mSki Load (0.2ms)[0m  [1mSELECT "skis".* FROM "skis"[0m
+  Rendered skis/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-12-30 17:28:44 -0800
+Processing by SkisController#index as HTML
+  [1m[35mSki Load (0.1ms)[0m  SELECT "skis".* FROM "skis"
+  Rendered skis/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/skis/new" for ::1 at 2015-12-30 17:28:45 -0800
+Processing by SkisController#new as HTML
+  Rendered skis/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/skis/new" for ::1 at 2015-12-30 17:31:18 -0800
+Processing by SkisController#new as HTML
+  Rendered skis/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.3.6.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for ::1 at 2015-12-30 17:31:19 -0800
+
+
+Started GET "/assets/skis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-30 17:31:19 -0800
+
+
+Started GET "/assets/custom.self-6b34a9108e9324b189745fadee143bd1ac2517449d14824f6c9b6478eaa26d50.css?body=1" for ::1 at 2015-12-30 17:31:19 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-30 17:31:19 -0800
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-12-30 17:31:19 -0800
+
+
+Started GET "/assets/demo.self-2bca918a374062aaed1430caed5bad99b45173605d166e7dbb8800a2aaa195a5.css?body=1" for ::1 at 2015-12-30 17:31:19 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-30 17:31:19 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-12-30 17:31:19 -0800
+
+
+Started GET "/assets/skis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-30 17:31:19 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-12-30 17:31:19 -0800
+
+
+Started POST "/skis" for ::1 at 2015-12-30 17:31:21 -0800
+Processing by SkisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pKKKtAjUX/1ZT06Bsa9NorwEbkI02ANr+D4VSD2E1/yF1YqdxJaE01YFwQ9zJO+wQIKR+J7Bs3DPKdsOHDUVVw==", "ski"=>{"name"=>"a", "description"=>""}, "commit"=>"Save skis"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSki Exists (0.1ms)[0m  SELECT  1 AS one FROM "skis" WHERE "skis"."name" = 'a' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/skis/new
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/skis/new" for ::1 at 2015-12-30 17:31:21 -0800
+Processing by SkisController#new as HTML
+  Rendered skis/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
