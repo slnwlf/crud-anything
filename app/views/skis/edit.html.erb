@@ -1,6 +1,6 @@
 <h1 class="text-center">Edit a type of ski here</h1>
 
-<%= form_for @ski do |f| %>
+<%= form_tag @ski do |f| %>
 
 <div class="form-group">
 	<%= f.text_field :name, autofocus: true, class: "form-control" %>

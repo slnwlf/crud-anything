@@ -1,3 +1,39 @@
+$main-color: #4d79ff;
+
 body {
 	background-color: skyblue; 
+}
+.container-fluid {
+	border-bottom: solid 4px darken($main-color, 30%)
+}
+.disclaimer {
+	background-color: white; 
+	padding: 2%;
+	border-radius: 2%; 
+	border: 2px solid; 
+	border-color: $main-color; 
+
+ 	span {
+	color: $main-color;
+	font-weight: bold;
+	}
+}
+
+.parameters {
+	color: $main-color;
+	font-size: 1.1em; 
+	font-weight: bold italic; 
+}
+.centered {
+	text-align: center; 
+}
+.outside-magazine {
+	text-align: center; 
+	
+	&:hover {
+	font-weight: bold;
+	}
+}
+#some-text {
+	font-weight: bold; 
 }
