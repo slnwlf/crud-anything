@@ -6,6 +6,8 @@ There are no user accounts.  No authentication or authorization.
 
 Here's what's special about this app:
 
+First, I spent some time learning how to style Flash messages because I hadn't done that before.  If the user tries to post a pair of skis and they use a name that is less than 6 characters, they get a nice red Flash message.  And that Flash message is dismissable.   I used Bootstrap styles so it looks pretty generic. 
+
 I dove into Sass for this weekend lab.  Sass is a CSS framework that allows more power features than regular CSS.  It is not a CSS framework like Bootstrap (which contains lots of existing styles), but it can be used in conjunction with Bootstrap.
 
 Sass files (.sass) but be compiled to output regular .css.  The great thing about Ruby on Rails is that Sass is built in so basic .scss files output as regular CSS.  No additional Gems need to be installed.   If we were using Sass with a Node.js app we would need to compile the .sass files somehow.  In Ruby it just magically happens for us. (Which is a Ruby theme)
