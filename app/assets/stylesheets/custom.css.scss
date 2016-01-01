@@ -1,4 +1,5 @@
 $main-color: #4d79ff;
+$green-color: #00ff00;
 
 body {
 	background-color: skyblue; 
@@ -10,7 +11,7 @@ body {
 	background-color: white; 
 	padding: 2%;
 	border-radius: 2%; 
-	border: 2px solid; 
+	border: 4px solid; 
 	border-color: $main-color; 
 
  	span {
