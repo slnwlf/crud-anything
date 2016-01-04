@@ -42,14 +42,15 @@ class SkisController < ApplicationController
 	end
 
 	def destroy
-
+		#get the ski id from the url params
 		ski_id = params[:id]
 
+		# use the id of the ski to find the ski in the database
 		ski = Ski.find_by_id(ski_id)
 
 		ski.destroy
 
-		redirect_to ski_path(ski)
+		redirect_to "/skis"
 	end
 
 	def create
