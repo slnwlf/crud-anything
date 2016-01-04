@@ -23,9 +23,22 @@ class SkisController < ApplicationController
 
 		ski = Ski.find_by_id(ski_id)
 
+		#whitelist params and save them to a variable
+		ski_params = params.require(:ski).permit(:name, :description)
+
+		#update the ski
 		ski.update_attributes(ski_params)
 
+		#redirect to show page for the updated pair of skis. 
 		redirect_to ski_path(ski)
+	end
+
+	def edit
+		ski_id = params[:id]
+		#get ski ID and save it
+		@ski = Ski.find_by_id(ski_id)
+		#render the edit view
+		render :edit
 	end
 
 	def destroy
@@ -54,3 +67,15 @@ class SkisController < ApplicationController
 		end
 	end
 end
+
+#rake routes
+#   Prefix Verb   URI Pattern              Controller#Action
+#     root GET    /                        skis#index
+#     skis GET    /skis(.:format)          skis#index
+#          POST   /skis(.:format)          skis#create
+#  new_ski GET    /skis/new(.:format)      skis#new
+# edit_ski GET    /skis/:id/edit(.:format) skis#edit
+#      ski GET    /skis/:id(.:format)      skis#show
+#          PATCH  /skis/:id(.:format)      skis#update
+#          PUT    /skis/:id(.:format)      skis#update
+#          DELETE /skis/:id(.:format)      skis#destroy
